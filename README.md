@@ -14,3 +14,5 @@ with this little application.
 
 The QR code will be generated. When it's done, it gets saved on your computer
 at `~/qrcode.png` and displayed in the Simulator for testing.
+
+Be sure to move `~/qrcode.png` before generating another one!
