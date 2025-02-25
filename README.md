@@ -20,6 +20,24 @@ Be sure to move `~/qrcode.png` before generating another one!
 You can then show load and draw that QR code PNG file in your game. Fast and
 easy.
 
+## Show the QR code in your game
+
+Put `qrcode.png` somewhere in your `source` directory. Create a new image and draw it:
+
+```lua
+local qrCode = playdate.graphics.image.new("qrcode.png")
+assert(qrCode, "Failed to load QR code image")
+qrCode:draw(20, 60)
+```
+
+## QR Code Size
+
+The QR code size is set to `nil` to balance smaller size and readbility. If you need a custom size, modify the `gfx.generateQRCode` second parameter. For example, this would make it 200px wide:
+
+```lua
+genTimer = gfx.generateQRCode(str, 200, setQRCode)
+```
+
 ## View Demo
 
 ![Demo GIF](./demo.gif)
