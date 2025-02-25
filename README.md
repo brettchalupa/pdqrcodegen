@@ -10,7 +10,7 @@ with this little application.
 3. Launch the Playdate Simulator
 4. Open it in the Simulator, ex: `PlaydateSimulator pdqrcodegen.pdx`
 5. Open the Lua console in the Simulator (Alt + Y on Linux)
-6. Type in `!msg https://example.com`
+6. Type in `!msg HTTPS://EXAMPLE.COM` (using all caps generates a smaller QR code!)
 
 The QR code will be generated for that string. When it's done, it gets saved on
 your computer at `~/qrcode.png` and displayed in the Simulator for testing.
