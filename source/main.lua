@@ -24,11 +24,11 @@ function playdate.update()
 	if qrImage then
 		qrImage:draw(12, 72)
 
-		gfx.drawText("Image saved on your computer at ~/qrcode.png", 12, 184)
+		gfx.drawText("Image saved on your computer at ~/qrcode.png", 12, 194)
 	end
 
 	if qrString then
-		gfx.drawText(qrString, 12, 160)
+		gfx.drawText(qrString, 12, 170)
 	end
 
 	if genTimer and genTimer.timeLeft > 0 then
