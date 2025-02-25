@@ -19,20 +19,20 @@ function playdate.update()
 	gfx.clear()
 
 	gfx.drawText("*Generate QR Code*", 12, 12)
-	gfx.drawText("Use !msg in the Simulator console to send string", 12, 42)
+	gfx.drawText("*Use !msg in the Simulator console to send string*", 12, 42)
 
 	if qrImage then
 		qrImage:draw(12, 72)
 
-		gfx.drawText("Image saved on your computer at ~/qrcode.png", 12, 194)
+		gfx.drawText("*Image saved on your computer at ~/qrcode.png*", 12, 194)
 	end
 
 	if qrString then
-		gfx.drawText(qrString, 12, 170)
+		gfx.drawText("*" .. qrString .. "*", 12, 170)
 	end
 
 	if genTimer and genTimer.timeLeft > 0 then
-		gfx.drawText("Generating QR code...", 12, 84)
+		gfx.drawText("*Generating QR code...*", 12, 84)
 	end
 end
 
