@@ -5,6 +5,7 @@ with this little application.
 
 ## How to Use
 
+0. [Download the latest release](https://github.com/brettchalupa/pdqrcodegen/releases/latest) _or_
 1. Clone the repo or download the source
 2. Compile the program with `pdc source pdqrcodegen.pdx`
 3. Launch the Playdate Simulator
